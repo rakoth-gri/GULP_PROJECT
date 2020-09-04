@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts_icon/icomoon.eot?72qxa1');
-  src:  url('../fonts_icon/icomoon.eot?72qxa1#iefix') format('embedded-opentype'),
-    url('../fonts_icon/icomoon.ttf?72qxa1') format('truetype'),
-    url('../fonts_icon/icomoon.woff?72qxa1') format('woff'),
-    url('../fonts_icon/icomoon.svg?72qxa1#icomoon') format('svg');
+  src:  url('../fontsicon/icomoon.eot?nc9xmd');
+  src:  url('../fontsicon/icomoon.eot?nc9xmd#iefix') format('embedded-opentype'),
+    url('../fontsicon/icomoon.ttf?nc9xmd') format('truetype'),
+    url('../fontsicon/icomoon.woff?nc9xmd') format('woff'),
+    url('../fontsicon/icomoon.svg?nc9xmd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -13,7 +13,6 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -38,15 +37,9 @@
 .icon-facebook:before {
   content: "\ea90";
 }
-.icon-whatsapp:before {
-  content: "\ea93";
+.icon-instagram:before {
+  content: "\ea92";
 }
-.icon-telegram:before {
-  content: "\ea95";
-}
-.icon-twitter:before {
-  content: "\ea96";
-}
-.icon-vk:before {
-  content: "\ea98";
+.icon-pinterest2:before {
+  content: "\ead2";
 }
