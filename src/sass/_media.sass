@@ -71,9 +71,27 @@
 				right: -40px
 				img
 					width: 25px
-					height: 42px		
- 
-
+					height: 42px
+	.tabs
+		padding: 0 0 100px 0
+		.container
+			div.tabs__element
+				display: flex
+				justify-content: space-around
+				align-items: center
+				.item
+					width: 47%
+					background-color: #ffffaa
+					&__modallist
+						width: 50%
+						margin-left: 20px
+						transform: translateX(0%)
+						transition: 1s all
+						list-style-type: none
+						position: relative
+                		
+								
+    
 @media screen and (max-width: 767.98px)
 
 	.bg_main
@@ -162,20 +180,21 @@
 
 	.tabs
 		padding: 0 0 100px 0
+		title
+			text-align: center
 		.container
 			width: 98%
 			margin: 0 auto
 			.tabs__catalogue
-				width: 98%
-				margin: 0 13px
-				justify-content: space-around
+				width: 100%
+				margin: 0 auto
+				justify-content: center
 				height: auto
 				margin-top: 35px
 				li.tab
-					width: 32%
+					width: 30%
 					div
-						font-size: 18px
-
+						font-size: 16px
 			div.tabs__element
 				display: flex
 				flex-direction: column
@@ -186,7 +205,7 @@
 				.item
 					width: 60%
 					margin-bottom: 20px
-					background-color: #ffffff
+					background-color: #ffffaa
 					&__img
 						width: 55%
 						height: auto					
@@ -275,48 +294,81 @@
 
 	.tabs
 		padding: 0 0 100px 0
+		.title
+			font-size: 18px
 		.container
-			width: 97%
+			width: 98%
 			margin: 0 auto
-			h2.title
-				font-size: 20px
 			.tabs__catalogue
-				width: 100%
-				margin: 0 auto
 				flex-direction: column
-				justify-content: space-between
 				align-items: center
-				height: auto
-				margin-top: 35px
+				width: 100%
+				text-align: center
+				padding-right: 0
 				li.tab
-					width: 90%
-					margin-bottom: 15px
+					margin: 0px
+					width: 80% 
 					div
-						font-size: 18px					
-			div.tabs__element
-				display: flex
-				flex-direction: column
-				justify-content: space-between
-				align-items: center
-				width: 100%
-				margin-top: 30px
-				div.item
-					margin-bottom: 0px
-					background-color: #ffffff
-					&__img
-						height: auto
-					hr
-						margin: 10px 0 10px 0	
-					.item__footer
-						display: flex
-						flex-direction: column
-						justify-content: space-around
-						align-items: center
-						.prev_price
-							font-size: 15px
-							margin-bottom: 3px
-						.discount_price
-							font-size: 15px   		
-							margin-bottom: 3px
+						font-size: 15px
+		
+			.item
+				margin-bottom: 0px
+				background-color: #ffffaa
+				ul.item__modallist
+					&_active
+						transform: translateX(-100%)
+						margin-right: 0px
+						width: 50%
+						list-style-type: none
+						padding: 0 5px
+						position: relative
+						li
+							font-size: 14px
+							font-weight: 400px
+							color: #555555
+							margin-bottom: 20px
+							text-align: left
+							a.back
+								position: absolute
+								bottom: -10px
+								left: 45%
+								transform: translateX(-45%)
+								display: block
+								font-size: 16px
+								font-weight: 500
+								&:hover
+									color: #c10707
+							&:before
+								content: ""
+								position: absolute
+								width: 5px
+								height: 5px
+								background-color: #c10707
+								display: inline-block
+								left: -15px
+								top: 6px
+							&:last-child
+								&:before
+									display: none
+				&__prices
+					div.prev_price
+						color: #555555
+						font-weight: 300
+						font-size: 14px
+						text-decoration: line-through
+						margin-right: 18px
+					div.discount_price
+						font-weight: 700
+						font-size: 14px					
+											
+											
+						
+
+									
+								
+									
+
+						
+									
 
 
