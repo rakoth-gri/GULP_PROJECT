@@ -97,12 +97,12 @@
             &__wrapper
                 display: flex
                 width: calc(200% + 40px)
-            &__card
-                width: 50%
-                margin-right: 0px
-                transform: translateX(-110%)
-                transition: 1s all
-                &_active
+                .item__card
+                    width: 50%
+                    margin-right: 0px
+                    transform: translateX(-100%)
+                    transition: 1s all
+                .item__card_active
                     transform: translateX(0%)
                     width: 50%
             &__modallist
@@ -114,8 +114,8 @@
                 position: relative
                 &_active
                     transform: translateX(-100%)
-                    margin-right: 0px
-                    width: 50%
+                    margin-left: 0px
+                    width: 48%
                     list-style-type: none
                     padding-left: 0px
                     li a.back
@@ -133,7 +133,7 @@
                 &__list
                     font-size: 14px
                     font-weight: 400px
-                    color: #555555
+                    color: #000
                     margin-bottom: 20px
                     text-align: left
                     position: relative
