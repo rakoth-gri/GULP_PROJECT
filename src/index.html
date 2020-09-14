@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div class="bg_main">
-		<div class="container">s
+		<div class="container">
 			<header class="header">
 				<a href="/" class="header__logo"> 
 					<img src="img\logo_running-man.png" alt="logo">
@@ -23,7 +23,7 @@
 				</div>
 				<div class="header__contacts">
 					<a href="tel:+74993456789" class="header__phone"> 8(499) 345-67-89 </a>
-					<button class="button"> Заказать звонок </button>
+					<button class="button" data-calling="CALLBACK"> Заказать звонок </button>
 				</div>
 			</header>
 			<div class="bg_main__wrapper">
@@ -34,8 +34,8 @@
 					<div class="bg_main__icon"><img src="icons/hand-cart.png" alt=""> бесплатная доставка</div>
 					<div class="bg_main__icon"><img src="icons/_timer.png" alt=""> время подбора всего 10 минут</div>
 				</div>
-				<button class="button button_main"> Заказать консультацию </button>
-				<div class="bg_main__link"> <a href="/">  ИЛИ Перейти в каталог</a>             </div>
+				<button class="button button_main" data-calling="CALLBACK"> Заказать консультацию </button>
+				<div class="bg_main__link"> <a href="#catalogue_main">  ИЛИ Перейти в каталог</a>             </div>
 			</div>
 		</div>
 	</div>
@@ -73,7 +73,7 @@
 			<div class="forms__desc">
 			Просто заполните форму ниже <br> и мы Вам обязательно перезвоним!
 			</div>
-			<form class="modal_struct" action="#">
+			<form class="form_struct" action="#">
 				<input required name="Name" placeholder="name" type="text"> 
 				<input required name="Tel" placeholder="phone" type="number"> 
 				<input required name="Е-mail" placeholder="Е-mail" type="email">
@@ -108,7 +108,7 @@
 		</div>
 	</section> -->
 
-	<section class="tabs">
+	<section class="tabs" id="catalogue_main">
 		<div class="container">
 			<h2 class="title"> Каталог пульсометров </h2>
 			<ul class="tabs__catalogue">
@@ -121,7 +121,7 @@
 					<div class="item__wrapper">
 						<div class="item__card item__card_active">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FX</div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -147,7 +147,7 @@
 					<div class="item__wrapper">
 						<div class="item__card item__card_active">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР ASS</div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -173,7 +173,7 @@
 					<div class="item__wrapper">
 						<div class="item__card item__card_active">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР MONSTR</div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -199,7 +199,7 @@
 					<div class="item__wrapper">
 						<div class="item__card item__card_active">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР TITS_MEASURING</div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -225,7 +225,9 @@
 					<div class="item__wrapper">
 						<div class="item__card item__card_active">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР XXX
+								
+								FT1</div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -305,7 +307,7 @@
 					<div class="item__wrapper">
 						<div class="item__card">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FX7</div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -331,7 +333,7 @@
 					<div class="item__wrapper">
 						<div class="item__card">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT23 </div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -359,7 +361,7 @@
 					<div class="item__wrapper">
 						<div class="item__card item__card_active">
 							<img src="img/card_watch.png" alt="pulsometr" class="item__img">
-							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR FT1</div>
+							<div class="item__subtitle"> ПУЛЬСОМЕТР POLAR SH5</div>
 							<div class="item__desc"> Для опупенной тренировки епте! </div>
 							<a href="/" class="item__link"> Подробнее </a>
 						</div>
@@ -444,6 +446,37 @@
 		</div>
 	</footer>
 
+	<div class="modal_window">
+		<div class="modal" id="CALLBACK">
+			<div class="exit">&times;</div>
+			<div class="modal__title"> Заполняй уже форму заявки</div>
+			<div class="modal__subtitle"> И может мы Те перезвоним епт...</div>
+			<form class="form_struct form_struct_2" action="#">
+				<input required name="Name" placeholder="name" type="text"> 
+				<input required name="Tel" placeholder="phone" type="number"> 
+				<input required name="Е-mail" placeholder="Е-mail" type="email">
+				<button class="button button_submit"> Заказать консультацию </button>	
+			</form>
+		</div>
+		
+		<div class="modal" id="ORDER">
+			<div class="exit">&times;</div>
+			<div class="modal__title"> ВАШ ЗАКАЗ: </div>
+			<div class="modal__subtitle"> Пульсометр № 1</div>
+			<form class="form_struct form_struct_2" action="#">
+				<input required name="Name" placeholder="name" type="text"> 
+				<input required name="Tel" placeholder="phone" type="number"> 
+				<input required name="Е-mail" placeholder="Е-mail" type="email">
+				<button class="button button_submit" data-calling="ORDER"> КУПИТЬ </button>	
+			</form>
+		</div>
+		
+		<div class="modal modal_mini" id="THANKS">
+			<div class="exit">&times;</div>
+			<div class="modal__title"> Ну, нашел ты время позвонить... </div>
+			<div class="modal__subtitle"> Я тебе че... спасибо шо ли должен говорить и перезвонивать, ептэ!</div>
+		</div>	
+	</div>
 
 	<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script type="text/javascript" src="JS/script_tiny.js"></script>  -->

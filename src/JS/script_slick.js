@@ -30,4 +30,24 @@ $(document).ready(function(){
         });
     });
 
+    $('[data-calling=CALLBACK]').on('click', function() {
+        $('.modal_window,#CALLBACK').fadeIn('slow'); 
+    });
+
+    $('.exit').on('click', function() {
+        $('.modal_window, #CALLBACK, #ORDER, #THANKS').fadeOut('slow'); 
+    });
+
+    // $('.button_tabs').on('click', function() {
+    //     $('.modal_window, #ORDER').fadeIn('slow'); 
+    // });
+
+    $('.button_tabs').each(function(i){
+        $(this).on('click', function() {
+            $('#ORDER .modal__subtitle').text($('.item__subtitle').eq(i).text());
+            $('.modal_window, #ORDER').fadeIn('slow'); 
+        });
+    });
+
+
 });
