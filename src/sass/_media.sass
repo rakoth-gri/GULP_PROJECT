@@ -220,6 +220,26 @@
 							margin-left: 0px
 							width: 47%
 							padding-left: 10px
+	section.reviews
+		padding-top: 0
+		div.container
+			div.reviews__wrapper
+				margin-top: 0px
+				flex-direction: column
+				justify-content: center
+				align-items: center
+				.reviews__picture
+					margin-top: 50px
+					margin-bottom: 50px
+				.reviews__desc
+					flex-direction: column
+					justify-content: center
+					align-items: center
+					h3
+						text-align: center
+					.reviews__subtitle
+						display: block
+						text-align: center	
 													
 				 
 @media screen and (max-width: 575.98px) 
@@ -326,12 +346,16 @@
 			.item
 				margin-bottom: 40px
 				background-color: #ffffaa
+				&__subtitle
+					font-size: 13px
+				&__desc
+					font-size: 13px	
 				ul.item__modallist
-					padding-left: 10px
 					&_active
 						transform: translateX(-100%)
 						margin: 0px
-						width: 50%
+						width: 52%
+						margin-left: 6px
 					li
 						font-size: 13px
 						font-weight: 400px
@@ -369,7 +393,20 @@
 						margin-right: 18px
 					div.discount_price
 						font-weight: 700
-						font-size: 14px					
+						font-size: 14px
+	.footer
+		div.footer__info
+			address
+				font-size: 14px
+			.footer__info__tel
+				font-size: 14px
+			.footer__info__social
+				justify-content: center
+				width: 100%
+				span
+					font-size: 24px		
+
+
 											
 											
 						

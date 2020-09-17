@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     $('.slick__slider').slick({
         infinite: true,
         slidesToShow: 2,
@@ -49,5 +50,84 @@ $(document).ready(function(){
         });
     });
 
+    
+    $("#base_form").validate({
+
+        rules: {
+            firstname: {
+            required: true,
+            minlength: 6
+            },
+
+            email: {
+              required: true,
+              email: true
+            },
+
+            Tel: {
+                required: true,
+                minlength: 11
+            }        
+        },
+
+        messages: {
+            
+            firstname: {
+                minlength: jQuery.validator.format("Бля, не менее {0} букф вводи, нахуй..")
+            },
+
+            email: {
+                required: "А почта, че, по-твоему не нужна шо ли...",
+                email: "Англискими буквами ебашь, не нашими..."
+            },
+
+            Tel: {
+                minlength: jQuery.validator.format("В мабиле Те не западло {0} цифер скребануть")
+            }    
+        }
+    });
+    
+    // Оптимизируем код за счет введения функции!!!
+
+    function valideForms(form) {
+        
+        $(form).validate({
+            rules: {
+                firstname: {
+                required: true,
+                minlength: 2
+                },
+    
+                email: {
+                  required: true,
+                  email: true
+                },
+    
+                Tel: {
+                    required: true,
+                    minlength: 11
+                }        
+            },
+    
+            messages: {
+                
+                firstname: {
+                    minlength: jQuery.validator.format("Введите не менее {0} буквенных символов!")
+                },
+    
+                email: {
+                    required: "Не забудьте указать адрес электронной почты!",
+                    email: "не пропустите знак @"
+                },
+    
+                Tel: {
+                    minlength: jQuery.validator.format("Телефон должен начинаться с +7, далее следуют {0} цифр Вашего номера!")
+                }    
+            }
+        });
+    }
+
+    valideForms("#ORDER form");
+    valideForms("#CALLBACK form");
 
 });
