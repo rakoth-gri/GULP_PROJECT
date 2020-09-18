@@ -112,7 +112,8 @@ $(document).ready(function(){
             messages: {
                 
                 firstname: {
-                    minlength: jQuery.validator.format("Введите не менее {0} буквенных символов!")
+                    minlength: jQuery.validator.format("Введите не менее {0} буквенных символов!"),
+                    required: "Требуется заполнить данное поле!"
                 },
     
                 email: {
@@ -121,7 +122,8 @@ $(document).ready(function(){
                 },
     
                 Tel: {
-                    minlength: jQuery.validator.format("Телефон должен начинаться с +7, далее следуют {0} цифр Вашего номера!")
+                    minlength: jQuery.validator.format("Телефон должен начинаться с +7, далее следуют {0} цифр Вашего номера!"),
+                    required: "Требуется заполнить данное поле!"
                 }    
             }
         });
