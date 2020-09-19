@@ -82,7 +82,7 @@ $(document).ready(function(){
             },
 
             Tel: {
-                minlength: jQuery.validator.format("В мабиле Те не западло {0} цифер скребануть")
+                minlength: jQuery.validator.format("Тебе че, западло {0} цифер херануть... Не ССы, вводи нах..")
             }    
         }
     });
