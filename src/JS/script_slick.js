@@ -132,4 +132,8 @@ $(document).ready(function(){
     valideForms("#ORDER form");
     valideForms("#CALLBACK form");
 
+    jQuery(function($){
+        $('input[name="Tel"]').mask("+7 (999) 999-9999",{placeholder:" "});
+    });
+
 });
