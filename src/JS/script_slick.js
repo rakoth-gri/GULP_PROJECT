@@ -127,7 +127,7 @@ $(document).ready(function(){
                 }    
             }
         });
-    }
+    };
 
     valideForms("#ORDER form");
     valideForms("#CALLBACK form");
@@ -144,8 +144,8 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-
-
+            $('#CALLBACK, #ORDER').fadeOut();
+            $('#THANKS, .modal_window').fadeIn('slow');
             $("form").trigger('reset');
         });
         return false;
