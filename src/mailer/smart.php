@@ -1,7 +1,7 @@
 <?php 
 
-$name = $_POST['name'];
-$phone = $_POST['phone'];
+$name = $_POST['firstname'];
+$mobile = $_POST['Tel'];
 $email = $_POST['email'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -11,28 +11,29 @@ $mail->CharSet = 'utf-8';
 // $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+$mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '';                 // Наш логин
-$mail->Password = '';                           // Наш пароль от ящика
+$mail->Username = 'rakoth-gri@yandex.ru';                 // Наш логин
+$mail->Password = '5agu7by5';                           // Наш пароль от ящика
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
-$mail->setFrom('', 'Pulse');   // От кого письмо 
-$mail->addAddress('');     // Add a recipient
-//$mail->addAddress('ellen@example.com');               // Name is optional
+$mail->setFrom('rakoth-gri@yandex.ru', 'RAMIL_SITE');   // От кого письмо 
+$mail->addAddress('galievi.f@yandex.ru');     // Add a recipient
+// $mail->addAddress('info@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
-//$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
-//$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
+//$mail->addAttachment('/var/tmp/file.tar.gz');    // Add attachments
+$mail->addAttachment('../img/Inspiration.jpg', 'Our dude.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Автоматическая рассылка почты от пацанов из Челябинска';
 $mail->Body    = '
-		Пользователь оставил данные <br> 
+	Ебануть этот скрипт нас вдохновил этот нигер-пацанчик из Америки. <br>
+	Мы рады что в Пиндостане, есть нормальные Пацанята, а не только Гомики и чертафаны!!! <br>
 	Имя: ' . $name . ' <br>
-	Номер телефона: ' . $phone . '<br>
+	Номер телефона: ' . $mobile . '<br>
 	E-mail: ' . $email . '';
 
 if(!$mail->send()) {

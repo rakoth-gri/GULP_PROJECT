@@ -136,4 +136,18 @@ $(document).ready(function(){
         $('input[name="Tel"]').mask("+7 (999) 999-9999",{placeholder:" "});
     });
 
+    $('form').submit(function(e) {
+        e.preventDefault();
+        $.ajax ({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+
+
+            $("form").trigger('reset');
+        });
+        return false;
+    });
 });
