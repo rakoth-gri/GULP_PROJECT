@@ -150,4 +150,20 @@ $(document).ready(function(){
         });
         return false;
     });
+
+    // делаем умный скролл
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1600) {
+            $('.icon_up').fadeIn();
+        } else {
+            $('.icon_up').fadeOut();
+        }    
+    });
+
+    $("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+    });
 });
