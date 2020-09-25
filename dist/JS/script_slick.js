@@ -6,7 +6,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         speed: 1000,
         lazyLoad: 'ondemand',
-        
+        autoplay: true,
         prevArrow: '<button type="button" class="slick-prev"> <img src="icons/prev.png"></button>',
         nextArrow: '<button type="button" class="slick-next"> <img src="icons/next.png"></button>'
     });
