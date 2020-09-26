@@ -13,7 +13,7 @@ gulp.task('server', function() {
             baseDir: "dist"
         }
     });
-    gulp.watch("src/*.html").on("change", browserSync.reload);
+    gulp.watch("dist/*.html").on("change", browserSync.reload);
 });
 
 gulp.task ('styles', function() { 
@@ -66,6 +66,11 @@ gulp.task ('img', function() {
         .pipe(gulp.dest('dist/img'));
 });
 
+
+gulp.task ('audio', function() {
+    return gulp.src("src/audio/our_guys.mp3")
+        .pipe(gulp.dest('dist/audio'));
+});
 
 gulp.task('default', gulp.parallel( 'watch', 'server', 'styles', 'img',
 'mailer', 'icons', 'fonts', 'scripts', 'html'));
